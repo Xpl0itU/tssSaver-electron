@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tssChecker</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="assets/style.css">
+    <h1>tssChecker</h1>
+    <hr>
+    <h3>Log</h3>
+    <textarea rows="20" cols="90" id="command-output" disabled="true"></textarea>
+    <div id="status"></div>
+    <hr>
+    <script src="./gui-funct.js"></script>
+    <script>
+        function getCommandOutput() { return document.getElementById("command-output");  };
+        function getStatus()      { return document.getElementById("status");  };
+    </script>
+      <label for="device">Device</label>
+      <input type="text" class="textinputs" id="device"></input>
+      <br>
+      <label for="ver">iOS Version</label>
+      <input type="text" class="textinputs" id="ver"></input>
+      <br>
+      <label for="ecid">ECID</label>
+      <input type="text" class="textinputs" id="ecid"></input>
+      <br>
+      <label for="gen">Generator</label>
+      <input type="text" class="textinputs" id="gen" placeholder="0x1111111111111111" value="0x1111111111111111"></input>
+      <br>
+      <label for="save">Save Blobs</label>
+      <input type="checkbox" class="textinputs" id="save" value="-s" checked></input>
+      <br>
+      <button type="button" onclick="backgroundProcess();">Go</button>
+  </body>
+</html>
