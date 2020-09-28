@@ -1,6 +1,9 @@
 # tssSaver-electron
 A GUI wrapper written in electron for tssChecker (WIP)
 
+### Screenshot
+![Screenshot](.github/screenshot.png)
+
 ## Features
 - Saves blobs to Documents folder
 - Set a custom nonce generator or use the default one (0x1111111111111111)
