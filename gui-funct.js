@@ -10,7 +10,7 @@ function arg() { return document.getElementsByClassName("textinputs");  };
 
 function getDeviceData() {
 
-  var ideviceinfo = './bin/ideviceinfo/ideviceinfo'
+  var ideviceinfo = __dirname +  '/bin/ideviceinfo/ideviceinfo'
   var getecid = process.spawn(ideviceinfo, ['-k' + 'DieID']);
 
   getecid.stdout.on('data', (data) => {
