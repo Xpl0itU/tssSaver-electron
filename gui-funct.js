@@ -3,6 +3,7 @@ var fs = require('fs-extra');
 const path = require('path');
 const dialog = require('electron').remote.dialog;
 const process = require('child_process');
+const Photon = require("electron-photon");
 
 function appendOutput(msg) { getCommandOutput().value = (msg+'\n'); };
 function setStatus(msg)    { getStatus().innerHTML = msg; };

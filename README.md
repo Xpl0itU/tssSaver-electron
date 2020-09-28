@@ -11,7 +11,7 @@ A GUI wrapper written in electron for tssChecker (WIP)
 - Checks if a version is being signed
 
 ### TODO
-- Build a better UI
+- ~~Build a better UI~~
 - Windows and Linux support
 - Let the user select where to save the blobs
 - Device info saving, so there's no need to plug the device or enter its data manually every time you want to save blobs
